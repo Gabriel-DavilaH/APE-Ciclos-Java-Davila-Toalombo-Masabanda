@@ -10,7 +10,6 @@ public class ControlCalificaciones {
         int aprobados = 0;
         int reprobados = 0;
 
-        // Validacion con WHILE - numero de estudiantes > 0
         System.out.print("Ingrese numero de estudiantes: ");
         n = sc.nextInt();
         while (n <= 0) {
@@ -20,12 +19,10 @@ public class ControlCalificaciones {
 
         double[] notas = new double[n];
 
-        // Procesamiento con FOR
         for (int i = 0; i < n; i++) {
             System.out.print("Calificacion del estudiante " + (i+1) + " (0-10): ");
             double nota = sc.nextDouble();
 
-            // Validacion con WHILE - nota entre 0 y 10
             while (nota < 0 || nota > 10) {
                 System.out.print("Error, nota entre 0 y 10. Ingrese de nuevo: ");
                 nota = sc.nextDouble();
