@@ -22,8 +22,4 @@ Comprender y aplicar los conceptos teóricos y prácticos de las estructuras de 
 *   **Arreglos:**
     *   `double[] notas` para almacenar las calificaciones de todos los estudiantes.
 
-## 🚀 Instrucciones de Ejecución
-[Explica cómo se corre el código.]
-1. Clonar el repositorio:
-   ```bash
-   git clone [URL_DE_TU_REPOSITORIO]
+
