@@ -1,43 +1,102 @@
-<div align="center">
+## Pseudocodigo 
+````
+Proceso 
 
-  <img src="https://capsule-render.vercel.app/api?type=wave&color=0:0D1B3D,50:4B1FA6,100:00C9FF&height=220&section=header&text=Tarea&fontSize=52&fontColor=FFFFFF&animation=fadeIn&fontAlignY=38" alt="Encabezado animado del repositorio Prueba-Practica"/>
+    Definir TARIFA_MOTO, TARIFA_AUTO, TARIFA_CAMIONETA Como Real
+    Definir contMotos, contAutos, contCamionetas Como Entero
+    Definir acumMotos, acumAutos, acumCamionetas Como Real
+    Definir tipo, opcion, totalVehiculos Como Entero
+    Definir horas, pago, totalRecaudado, promedioPagado Como Real
 
-  <br>
+    TARIFA_MOTO <- 0.50
+    TARIFA_AUTO <- 1.00
+    TARIFA_CAMIONETA <- 1.50
 
-  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=22&duration=3500&pause=900&color=00C9FF&center=true&vCenter=true&width=800&height=90&lines=Si+lo+puedes+imaginar%2C+lo+puedes+programar.;Primero+lo+imaginamos.+Luego+lo+programamos.;Y+si+falla%2C+lo+depuramos+juntos.;Que+la+fuerza+del+debug+nos+acompa%C3%B1e." alt="Frases animadas con efecto de escritura"/>
+    contMotos <- 0
+    contAutos <- 0
+    contCamionetas <- 0
+    acumMotos <- 0
+    acumAutos <- 0
+    acumCamionetas <- 0
 
-  <br>
+    Escribir "ESTACIONAMIENTO UNIVERSITARIO"
 
-</div>
+    Repetir
 
-## 👥 Integrantes
+        Escribir "Tipo de vehiculo:"
+        Escribir "1. Motocicleta"
+        Escribir "2. Automovil"
+        Escribir "3. Camioneta"
+        Escribir "Seleccione:"
+        Leer tipo
 
-* Toalombo Punina Jeremy Patricio
-* Dávila Hernández Gabriel Marcelo
-* Masabanda Chasiluisa Jeremy Isaac
+        Escribir "Horas estacionado:"
+        Leer horas
 
-## 🎯 Objetivo
+        Si horas <= 0 Entonces
+            Escribir "ERROR: Las horas deben ser mayores que cero."
+        SiNo
 
-Comprender y aplicar los conceptos teóricos y prácticos de las estructuras de control repetitivas (While, Do While y For) mediante la resolución de algoritmos, con el fin de automatizar procesos iterativos, optimizar la lógica de programación y diferenciar cuándo es más eficiente utilizar cada tipo de bucle según la naturaleza del problema.
+            Si tipo < 1 O tipo > 3 Entonces
+                Escribir "ERROR: Tipo no valido."
+            SiNo
 
-## 📝 Descripción de los Ejercicios
+                Segun tipo Hacer
 
-* **Ejercicio 1:** El programa permite registrar las calificaciones de un grupo de estudiantes, validar que los datos ingresados sean correctos y calcular información general como la suma, el promedio, la nota más alta, la nota más baja y la cantidad de estudiantes aprobados y reprobados.
-* **Ejercicio 2:** El programa permite ingresar una tabla inicial y una tabla final para generar las tablas de multiplicar correspondientes. También permite establecer hasta qué multiplicador se mostrarán los resultados y valida que la tabla inicial no sea mayor que la tabla final.
-* **Ejercicio 3:** El programa permite ingresar un número N y generar la serie de números pares desde 2 hasta N. Además, calcula la cantidad de números pares, su suma y el promedio de los valores
+                    1:
+                        pago <- horas * TARIFA_MOTO
+                        Escribir "A pagar: $", pago
+                        contMotos <- contMotos + 1
+                        acumMotos <- acumMotos + pago
 
+                    2:
+                        pago <- horas * TARIFA_AUTO
+                        Escribir "A pagar: $", pago
+                        contAutos <- contAutos + 1
+                        acumAutos <- acumAutos + pago
 
-## 🏗️ Estructuras Utilizadas
+                    3:
+                        pago <- horas * TARIFA_CAMIONETA
+                        Escribir "A pagar: $", pago
+                        contCamionetas <- contCamionetas + 1
+                        acumCamionetas <- acumCamionetas + pago
 
-* **Bucle `while`:**
-  * Validación de datos de entrada (número de estudiantes > 0 y notas en rango 0-10).
+                FinSegun
 
-* **Bucle `for`:**
-  * Recorrido del arreglo para procesar las `n` calificaciones, acumular la suma y calcular estadísticas.
+            FinSi
 
-* **Condicionales `if-else`:**
-  * Clasificación de aprobados/reprobados y actualización de nota máxima y mínima.
-*   **Arreglos:**
-    *   `double[] notas` para almacenar las calificaciones de todos los estudiantes.
+        FinSi
 
+        Escribir "¿Registrar otro? 1=Si 0=No:"
+        Leer opcion
 
+    Hasta Que opcion <> 1
+
+    totalVehiculos <- contMotos + contAutos + contCamionetas
+    totalRecaudado <- acumMotos + acumAutos + acumCamionetas
+
+    Si totalVehiculos > 0 Entonces
+        promedioPagado <- totalRecaudado / totalVehiculos
+    SiNo
+        promedioPagado <- 0
+    FinSi
+
+    Escribir "===== REPORTE ====="
+    Escribir "Motocicletas: ", contMotos
+    Escribir "Automoviles: ", contAutos
+    Escribir "Camionetas: ", contCamionetas
+    Escribir "Total vehiculos: ", totalVehiculos
+    Escribir "Total recaudado: $", totalRecaudado
+    Escribir "Promedio pagado: $", promedioPagado
+    Escribir "==================="
+
+FinProceso
+````
+## Prueba de escritorio 
+
+|    Paso | Tipo        | Horas |  Pago | Cont. Motos | Cont. Autos | Cont. Camionetas | Acum. Motos | Acum. Autos | Acum. Camionetas |
+| ------: | ----------- | ----: | ----: | ----------: | ----------: | ---------------: | ----------: | ----------: | ---------------: |
+| Inicial | —           |     — |     — |           0 |           0 |                0 |          $0 |          $0 |               $0 |
+|       1 | Motocicleta |     2 | $1.00 |           1 |           0 |                0 |       $1.00 |          $0 |               $0 |
+|       2 | Automóvil   |     3 | $3.00 |           1 |           1 |                0 |       $1.00 |       $3.00 |               $0 |
+|       3 | Camioneta   |     4 | $6.00 |           1 |           1 |                1 |       $1.00 |       $3.00 |            $6.00 |
