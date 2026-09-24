@@ -7,11 +7,7 @@ Si el usuario ingresa un número, mostrar primero un triángulo creciente de ast
 
 Para el ejemplo con 5, se debe mostrar:
 
-*
-**
-***
-****
-*****
+
 
 Posteriormente:
 
