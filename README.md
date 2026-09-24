@@ -2,7 +2,7 @@
 Realizar un programa que permita ingresar una tabla inicial, una tabla final y el multiplicador hasta el cual se desea calcular. El programa debe mostrar las tablas de multiplicar desde la tabla inicial hasta la tabla final. Si la tabla inicial es mayor que la tabla final, debe mostrar un mensaje de error.
 
 ## Analisis
-##Entrada
+<br>Entrada
 -Ingresar la tabla inicial.
 -Ingresar la tabla final.
 -Ingresar hasta qué multiplicador se desea calcular.
