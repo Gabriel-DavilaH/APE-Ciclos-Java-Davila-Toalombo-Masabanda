@@ -29,11 +29,11 @@ Saldo final.
 Estructuras esperadas: do-while, switch, contadores y acumuladores.
 
 ## Analisis
-Entrada<br>
+**<br>Entrada<br>**
 Seleccionar una opción del menú.<br>
 Ingresar el valor del depósito cuando corresponda.<br>
 Ingresar el valor del retiro cuando corresponda.<br>
-Proceso<br>
+**<br>Proceso<br>**
 Iniciar el saldo en $100.<br>
 Mostrar el menú del cajero.<br>
 Leer la opción seleccionada.<br>
@@ -47,7 +47,7 @@ Si es 4, mostrar los movimientos realizados.<br>
 Si es 5, finalizar el programa.<br>
 Si se ingresa otra opción, mostrar un mensaje de opción inválida.<br>
 Repetir el menú mientras la opción sea diferente de 5.<br>
-Salida<br>
+**<br>Salida<br>**
 Mostrar el saldo disponible.<br>
 Mostrar los movimientos realizados.<br>
 Mostrar la cantidad de depósitos.<br>
