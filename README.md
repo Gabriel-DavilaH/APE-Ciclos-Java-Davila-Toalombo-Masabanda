@@ -1,3 +1,40 @@
+## Enunciado
+Ejercicio 6. Triángulo y patrones
+
+Solicitar al usuario un número entre 2 y 10.
+
+Si el usuario ingresa un número, mostrar primero un triángulo creciente de asteriscos, luego un triángulo decreciente de asteriscos y finalmente un patrón de números.
+
+Para el ejemplo con 5, se debe mostrar:
+
+*
+**
+***
+****
+*****
+
+Posteriormente:
+
+*****
+****
+***
+**
+*
+
+Finalmente:
+
+1
+12
+123
+1234
+12345
+
+El estudiante deberá explicar mediante una tabla de trazas cómo interactúan el ciclo exterior y el ciclo interior.
+
+Estructura obligatoria: ciclos for anidados.
+
+## Anunciado
+
 ## Pseudocodigo 
 
 ```
