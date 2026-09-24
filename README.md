@@ -7,16 +7,16 @@ Entrada<br>
 -Ingresar la tabla final.<br>
 -Ingresar hasta qué multiplicador se desea calcular.<br>
 Proceso<br>
--Verificar si la tabla inicial es mayor que la tabla final.
--Si es mayor, generar un mensaje de error.
--Si es válida, recorrer las tablas desde la inicial hasta la final.
--Para cada tabla, recorrer los multiplicadores desde 1 hasta el valor ingresado.
--Multiplicar el número de la tabla por el multiplicador.
--Obtener el resultado de cada multiplicación.
-##Salida
--Mostrar el número de cada tabla.
--Mostrar las multiplicaciones y sus resultados.
--Mostrar un mensaje de error si la tabla inicial es mayor que la tabla final.
+-Verificar si la tabla inicial es mayor que la tabla final.<br>
+-Si es mayor, generar un mensaje de error.<br>
+-Si es válida, recorrer las tablas desde la inicial hasta la final.<br>
+-Para cada tabla, recorrer los multiplicadores desde 1 hasta el valor ingresado.<br>
+-Multiplicar el número de la tabla por el multiplicador.<br>
+-Obtener el resultado de cada multiplicación.<br>
+Salida<br>
+-Mostrar el número de cada tabla.<br>
+-Mostrar las multiplicaciones y sus resultados.<br>
+-Mostrar un mensaje de error si la tabla inicial es mayor que la tabla final.<br>
 
 ## Pseudocodigo 
 ```
