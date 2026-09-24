@@ -1,3 +1,61 @@
+## Enunciado
+Ejercicio 4. Cajero automático básico
+
+Construir un programa que muestre un menú de cajero automático con las siguientes opciones:
+
+Consultar saldo
+Depositar
+Retirar
+Mostrar movimientos
+Salir
+
+El usuario comenzará con un saldo de $100. El programa debe permanecer activo hasta que el usuario seleccione la opción Salir.
+
+El programa debe validar que:
+
+No se permitan depósitos negativos.
+No se permitan retiros negativos.
+No se pueda retirar más dinero del saldo disponible.
+No se acepten opciones inexistentes.
+
+Al finalizar, debe mostrar:
+
+Depósitos realizados.
+Retiros realizados.
+Total depositado.
+Total retirado.
+Saldo final.
+
+Estructuras esperadas: do-while, switch, contadores y acumuladores.
+
+## Analisis
+Entrada<br>
+Seleccionar una opción del menú.<br>
+Ingresar el valor del depósito cuando corresponda.<br>
+Ingresar el valor del retiro cuando corresponda.<br>
+Proceso<br>
+Iniciar el saldo en $100.<br>
+Mostrar el menú del cajero.<br>
+Leer la opción seleccionada.<br>
+Si es 1, consultar y mostrar el saldo.<br>
+Si es 2, solicitar el depósito y verificar que no sea negativo.<br>
+Si el depósito es válido, sumarlo al saldo y aumentar el contador de depósitos.<br>
+Si es 3, solicitar el retiro.<br>
+Verificar que el retiro no sea negativo y que no supere el saldo disponible.<br>
+Si es válido, restarlo del saldo y aumentar el contador de retiros.<br>
+Si es 4, mostrar los movimientos realizados.<br>
+Si es 5, finalizar el programa.<br>
+Si se ingresa otra opción, mostrar un mensaje de opción inválida.<br>
+Repetir el menú mientras la opción sea diferente de 5.<br>
+Salida<br>
+Mostrar el saldo disponible.<br>
+Mostrar los movimientos realizados.<br>
+Mostrar la cantidad de depósitos.<br>
+Mostrar la cantidad de retiros.<br>
+Mostrar el total depositado.<br>
+Mostrar el total retirado.<br>
+Mostrar el saldo final.<br>
+
 ## Pseudocodigo
 ```
 Proceso CajeroAcademico
