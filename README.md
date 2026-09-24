@@ -67,3 +67,6 @@ FinProceso
 |  2 | 1-2 | Verdadero          | `**`   |
 |  3 | 1-3 | Verdadero          | `***`  |
 |  4 | 1-4 | Verdadero          | `****` |
+
+## Diagrama 
+<img width="1600" height="900" alt="WhatsApp Image 2026-09-24 at 11 27 39 AM" src="https://github.com/user-attachments/assets/d2062e57-ee4b-44ca-b32c-60f2f5bf128e" />
