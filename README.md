@@ -1,4 +1,4 @@
-##Analisis
+ ##Analisis
 Entrada<br>
 -Ingresar el número N.<br>
 Proceso<br>
