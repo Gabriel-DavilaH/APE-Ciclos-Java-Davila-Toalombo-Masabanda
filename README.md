@@ -58,3 +58,6 @@ FinProceso
 |  4 |  3 | 4 × 3 |        12 |
 |  4 |  4 | 4 × 4 |        16 |
 |  4 |  5 | 4 × 5 |        20 |
+
+## Diagrama
+<img width="1600" height="900" alt="WhatsApp Image 2026-09-24 at 9 14 44 AM" src="https://github.com/user-attachments/assets/7198608d-e9be-45bd-900a-b0494028d85a" />
