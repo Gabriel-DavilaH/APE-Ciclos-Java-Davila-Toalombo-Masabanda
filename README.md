@@ -25,6 +25,15 @@ Comprender y aplicar los conceptos teóricos y prácticos de las estructuras de 
 * **Ejercicio 1:** El programa permite registrar las calificaciones de un grupo de estudiantes, validar que los datos ingresados sean correctos y calcular información general como la suma, el promedio, la nota más alta, la nota más baja y la cantidad de estudiantes aprobados y reprobados.
 * **Ejercicio 2:** El programa permite ingresar una tabla inicial y una tabla final para generar las tablas de multiplicar correspondientes. También permite establecer hasta qué multiplicador se mostrarán los resultados y valida que la tabla inicial no sea mayor que la tabla final.
 * **Ejercicio 3:** El programa permite ingresar un número N y generar la serie de números pares desde 2 hasta N. Además, calcula la cantidad de números pares, su suma y el promedio de los valores
+* **Ejercicio 4:** 
+El programa simula el funcionamiento de un cajero académico con un saldo inicial de $100. Permite consultar el saldo, realizar depósitos y retiros, validar que los valores ingresados sean correctos y verificar que existan fondos suficientes. Además, utiliza contadores y acumuladores para registrar la cantidad y el total de depósitos y retiros, mostrando los movimientos realizados y un resumen final con el saldo disponible.
+* **Ejercicio 5:** 
+El programa simula un estacionamiento universitario donde se registra el tipo de vehículo y las horas estacionadas. Calcula el valor a pagar según la tarifa correspondiente y obtiene estadísticas como la cantidad de motocicletas, automóviles y camionetas, el total recaudado y el promedio pagado.
+* **Ejercicio 6:** 
+El programa solicita un número entre 2 y 10 y genera tres patrones utilizando ciclos anidados: un triángulo creciente de asteriscos, un triángulo decreciente y un patrón numérico creciente.
+
+* **Ejercicio 7:** 
+El programa permite registrar ventas de productos de una cafetería universitaria, validando las cantidades ingresadas. Calcula el subtotal de cada venta, el total recaudado, la cantidad total de productos, el promedio por venta y determina cuál fue el producto más vendido.
 
 
 ## 🏗️ Estructuras Utilizadas
