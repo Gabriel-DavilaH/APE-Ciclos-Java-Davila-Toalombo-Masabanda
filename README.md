@@ -23,7 +23,7 @@ Producto con mayor cantidad vendida.
 Validar todos los datos ingresados.
 
 Estructuras esperadas: do-while, switch, contadores, acumuladores y condicionales.
-## Analisis
+## Análisis
 **<br>Entrada<br>**
 Seleccionar una opción del menú.<br>
 Ingresar el producto.<br>
