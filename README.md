@@ -21,31 +21,40 @@ Salida<br>
 ## Pseudocodigo 
 ```
 Proceso Ejercicio2
-
-
 Escribir "Tabla inicial: "
 Leer inicial
-
 Escribir "Tabla final: "
-Leer fin
-
+Leer fila
 Si inicial > fin Entonces
 	Escribir "Error: la tabla inicial no puede ser mayor que la final."
 SiNo
-	
 	Escribir "Hasta que multiplicador: "
 	Leer hasta
-	
 	Para i <- inicial Hasta fin Con Paso 1 Hacer
-		
 		Escribir "TABLA DEL ", i
-		
 		Para j <- 1 Hasta hasta Con Paso 1 Hacer
 			Escribir i, " x ", j, " = ", i * j
-		FinPara
-		
+		FinPara	
 	FinPara
 FinSi
+FinProceso
+````
+## Prueba de escritorio 
 
-
-FinProceso```
+|  i |  j | i × j | Resultado |
+| -: | -: | ----: | --------: |
+|  2 |  1 | 2 × 1 |         2 |
+|  2 |  2 | 2 × 2 |         4 |
+|  2 |  3 | 2 × 3 |         6 |
+|  2 |  4 | 2 × 4 |         8 |
+|  2 |  5 | 2 × 5 |        10 |
+|  3 |  1 | 3 × 1 |         3 |
+|  3 |  2 | 3 × 2 |         6 |
+|  3 |  3 | 3 × 3 |         9 |
+|  3 |  4 | 3 × 4 |        12 |
+|  3 |  5 | 3 × 5 |        15 |
+|  4 |  1 | 4 × 1 |         4 |
+|  4 |  2 | 4 × 2 |         8 |
+|  4 |  3 | 4 × 3 |        12 |
+|  4 |  4 | 4 × 4 |        16 |
+|  4 |  5 | 4 × 5 |        20 |
