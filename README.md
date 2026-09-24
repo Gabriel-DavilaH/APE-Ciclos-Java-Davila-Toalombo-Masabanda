@@ -23,6 +23,9 @@ Comprender y aplicar los conceptos teóricos y prácticos de las estructuras de 
 ## 📝 Descripción de los Ejercicios
 
 * **Ejercicio 1:** El programa permite registrar las calificaciones de un grupo de estudiantes, validar que los datos ingresados sean correctos y calcular información general como la suma, el promedio, la nota más alta, la nota más baja y la cantidad de estudiantes aprobados y reprobados.
+* **Ejercicio 1:** El programa permite ingresar una tabla inicial y una tabla final para generar las tablas de multiplicar correspondientes. También permite establecer hasta qué multiplicador se mostrarán los resultados y valida que la tabla inicial no sea mayor que la tabla final.
+* **Ejercicio 1:** El programa permite ingresar un número N y generar la serie de números pares desde 2 hasta N. Además, calcula la cantidad de números pares, su suma y el promedio de los valores
+
 
 ## 🏗️ Estructuras Utilizadas
 
