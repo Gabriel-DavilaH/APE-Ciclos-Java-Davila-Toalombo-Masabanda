@@ -71,3 +71,18 @@ public class Ejercicio3 {
     }
 }
 ```
+
+## Prueba de escritorio 
+
+|       i | i % 2 == 0 | contador | acumulador |
+| ------: | :--------: | -------: | ---------: |
+| Inicial |      —     |        0 |          0 |
+|       2 |     Sí     |        1 |          2 |
+|       3 |     No     |        1 |          2 |
+|       4 |     Sí     |        2 |          6 |
+|       5 |     No     |        2 |          6 |
+|       6 |     Sí     |        3 |         12 |
+|       7 |     No     |        3 |         12 |
+|       8 |     Sí     |        4 |         20 |
+|       9 |     No     |        4 |         20 |
+|      10 |     Sí     |        5 |         30 |
