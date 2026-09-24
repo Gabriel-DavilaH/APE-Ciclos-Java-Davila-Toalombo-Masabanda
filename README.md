@@ -38,7 +38,7 @@ Casos límite: N = 1, N = 2 y valores negativos.
 
 ## Pseudocodigo 
 ```
-Proceso Ejercicio3
+Proceso 
 
     Definir N, contador, acumulador, i Como Entero
     Definir promedio Como Real
