@@ -1,4 +1,4 @@
-Análisis del programa ControlCalificaciones
+## Análisis del programa ControlCalificaciones
 1. Nombre del programa:
 ControlCalificaciones
 2. Objetivo:
@@ -130,6 +130,7 @@ Fin
 
 ## Diagrama 
 
-<img width="808" height="355" alt="image" src="https://github.com/user-attachments/assets/d622d721-7011-4aa0-ae37-8223426b7b94" />
+<img width="1600" height="900" alt="WhatsApp Image 2026-09-24 at 9 21 53 AM" src="https://github.com/user-attachments/assets/e3f34948-8f56-44b3-ba43-245aa07ffacb" />
+
 
 
