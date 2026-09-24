@@ -2,21 +2,21 @@
 Realizar un programa que permita ingresar una tabla inicial, una tabla final y el multiplicador hasta el cual se desea calcular. El programa debe mostrar las tablas de multiplicar desde la tabla inicial hasta la tabla final. Si la tabla inicial es mayor que la tabla final, debe mostrar un mensaje de error.
 
 ## Analisis
-Entrada
-Ingresar la tabla inicial.
-Ingresar la tabla final.
-Ingresar hasta qué multiplicador se desea calcular.
-Proceso
-Verificar si la tabla inicial es mayor que la tabla final.
-Si es mayor, generar un mensaje de error.
-Si es válida, recorrer las tablas desde la inicial hasta la final.
-Para cada tabla, recorrer los multiplicadores desde 1 hasta el valor ingresado.
-Multiplicar el número de la tabla por el multiplicador.
-Obtener el resultado de cada multiplicación.
-Salida
-Mostrar el número de cada tabla.
-Mostrar las multiplicaciones y sus resultados.
-Mostrar un mensaje de error si la tabla inicial es mayor que la tabla final.
+##Entrada
+-Ingresar la tabla inicial.
+-Ingresar la tabla final.
+-Ingresar hasta qué multiplicador se desea calcular.
+##Proceso
+-Verificar si la tabla inicial es mayor que la tabla final.
+-Si es mayor, generar un mensaje de error.
+-Si es válida, recorrer las tablas desde la inicial hasta la final.
+-Para cada tabla, recorrer los multiplicadores desde 1 hasta el valor ingresado.
+-Multiplicar el número de la tabla por el multiplicador.
+-Obtener el resultado de cada multiplicación.
+##Salida
+-Mostrar el número de cada tabla.
+-Mostrar las multiplicaciones y sus resultados.
+-Mostrar un mensaje de error si la tabla inicial es mayor que la tabla final.
 
 ## Pseudocodigo 
 ```
