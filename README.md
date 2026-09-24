@@ -154,3 +154,6 @@ FinProceso
 |       3 |      1 | Jugo     |     4 |  $1.50 |    $6.00 |      3 |           9 |    $14.00 |    3 |        2 |    4 |        0 |
 |       4 |      2 | —        |     — |      — |        — |      3 |           9 |    $14.00 |    3 |        2 |    4 |        0 |
 |       5 |      4 | —        |     — |      — |        — |      3 |           9 |    $14.00 |    3 |        2 |    4 |        0 |
+
+## Diagrama
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c883f3b2-5342-4864-9a12-7b874cab2a0c" />
