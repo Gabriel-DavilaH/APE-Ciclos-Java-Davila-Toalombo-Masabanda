@@ -86,3 +86,6 @@ public class Ejercicio3 {
 |       8 |     Sí     |        4 |         20 |
 |       9 |     No     |        4 |         20 |
 |      10 |     Sí     |        5 |         30 |
+
+## Diagrama
+<img width="1600" height="900" alt="WhatsApp Image 2026-09-24 at 9 38 20 AM" src="https://github.com/user-attachments/assets/05edf06d-71e0-47b0-99a3-e853a394f1e3" />
