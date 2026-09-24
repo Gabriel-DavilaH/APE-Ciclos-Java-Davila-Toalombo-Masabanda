@@ -24,7 +24,30 @@ Validar todos los datos ingresados.
 
 Estructuras esperadas: do-while, switch, contadores, acumuladores y condicionales.
 ## Analisis
-
+**<br>Entrada<br>**
+Seleccionar una opción del menú.<br>
+Ingresar el producto.<br>
+Ingresar la cantidad de productos vendidos.<br>
+**<br>Proceso<br>**
+Mostrar el menú de la cafetería.<br>
+Leer la opción seleccionada.<br>
+Si se registra una venta, seleccionar el producto mediante switch.<br>
+Obtener el precio correspondiente al producto.<br>
+Validar que la cantidad sea válida.<br>
+Calcular el valor de la venta.<br>
+Aumentar el número de ventas.<br>
+Acumular la cantidad total de productos.<br>
+Acumular el total recaudado.<br>
+Comparar las cantidades vendidas para determinar el producto con mayor cantidad.<br>
+Calcular el promedio por venta.<br>
+Repetir el menú hasta seleccionar la opción Salir.<br>
+**<br>Salida<br>**
+Mostrar la tabla de productos y sus precios.<br>
+Mostrar el número de ventas.<br>
+Mostrar la cantidad total de productos vendidos.<br>
+Mostrar el total recaudado.<br>
+Mostrar el promedio por venta.<br>
+Mostrar el producto con mayor cantidad vendida.<br>
 ## Pseudocodigo 
 ````
 Proceso Cafeteria
