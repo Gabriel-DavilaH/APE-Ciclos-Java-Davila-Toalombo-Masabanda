@@ -15,9 +15,9 @@ Estructura for.
 
 Casos límite: N = 1, N = 2 y valores negativos.
 ## Analisis
- **Entrada<br>**
+ **<br>Entrada<br>**
 -Ingresar el número N.<br>
-Proceso<br>
+**<br>Proceso<br>**
 -Verificar si N es menor o igual a 1.<br>
 -Si N <= 1, mostrar que no hay números pares.<br>
 -Si N > 1, iniciar el contador en 0.<br>
@@ -29,7 +29,7 @@ Proceso<br>
 -Sumar el número al acumulador.<br>
 -Calcular el promedio dividiendo la suma para la cantidad de números pares.<br>
 -Mostrar la cantidad, la suma y el promedio.<br>
-Salida<br>
+**<br>Salida<br>**
 -Mostrar la serie de números pares.<br>
 -Mostrar la cantidad de números pares.<br>
 -Mostrar la suma de los números pares.<br>
