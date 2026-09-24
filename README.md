@@ -96,3 +96,5 @@ FinProceso
 |       2 | 2    |     3 | $3.00 |     1 |     1 |          0 |       $1.00 |       $3.00 |               $0 |
 |       3 | 3    |     4 | $6.00 |     1 |     1 |          1 |       $1.00 |       $3.00 |            $6.00 |
 
+## Diagrama
+<img width="1600" height="900" alt="WhatsApp Image 2026-09-24 at 11 20 47 AM" src="https://github.com/user-attachments/assets/57581c32-4ebc-4916-aff3-c136a8f7f44c" />
