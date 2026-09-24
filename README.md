@@ -15,7 +15,7 @@ Estructura for.
 
 Casos límite: N = 1, N = 2 y valores negativos.
 ## Analisis
-** Entrada<br>
+ Entrada<br>
 -Ingresar el número N.<br>
 Proceso<br>
 -Verificar si N es menor o igual a 1.<br>
