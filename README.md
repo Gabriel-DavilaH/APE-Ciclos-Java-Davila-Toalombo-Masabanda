@@ -33,7 +33,24 @@ El estudiante deberá explicar mediante una tabla de trazas cómo interactúan e
 
 Estructura obligatoria: ciclos for anidados.
 
-## Anunciado
+## Analisis
+**<br>Entrada<br>**
+Ingresar un número entre 2 y 10.<br>
+**<br>Proceso<br>**
+Leer el número ingresado.<br>
+Verificar que el número esté entre 2 y 10.<br>
+Utilizar un ciclo for exterior para controlar las filas.<br>
+Utilizar un ciclo for interior para imprimir los asteriscos del primer patrón.<br>
+Repetir el proceso para formar el triángulo creciente.<br>
+Utilizar otro ciclo for exterior para controlar las filas del triángulo decreciente.<br>
+Utilizar un ciclo for interior para imprimir los asteriscos correspondientes.<br>
+Utilizar ciclos for anidados para formar el patrón numérico.<br>
+Mostrar los patrones en el orden indicado.<br>
+**<br>Salida<br>**
+Mostrar el triángulo creciente de asteriscos.<br>
+Mostrar el triángulo decreciente de asteriscos.<br>
+Mostrar el patrón numérico creciente.<br>
+Mostrar la tabla de trazas para explicar el funcionamiento de los ciclos.<br>
 
 ## Pseudocodigo 
 
