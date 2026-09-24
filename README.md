@@ -1,43 +1,156 @@
-<div align="center">
+## Pseudocodigo 
+````
+Proceso Cafeteria
 
-  <img src="https://capsule-render.vercel.app/api?type=wave&color=0:0D1B3D,50:4B1FA6,100:00C9FF&height=220&section=header&text=Tarea&fontSize=52&fontColor=FFFFFF&animation=fadeIn&fontAlignY=38" alt="Encabezado animado del repositorio Prueba-Practica"/>
+    Definir numVentas, cantidadTotal Como Entero
+    Definir totalRecaudado Como Real
+    Definir cantCafe, cantSandwich, cantJugo, cantEmpanada Como Entero
+    Definir opcion, prod, cant, max Como Entero
+    Definir precio, subtotal, promedio Como Real
+    Definir masVendido Como Caracter
 
-  <br>
+    numVentas <- 0
+    cantidadTotal <- 0
+    totalRecaudado <- 0
 
-  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=22&duration=3500&pause=900&color=00C9FF&center=true&vCenter=true&width=800&height=90&lines=Si+lo+puedes+imaginar%2C+lo+puedes+programar.;Primero+lo+imaginamos.+Luego+lo+programamos.;Y+si+falla%2C+lo+depuramos+juntos.;Que+la+fuerza+del+debug+nos+acompa%C3%B1e." alt="Frases animadas con efecto de escritura"/>
+    cantCafe <- 0
+    cantSandwich <- 0
+    cantJugo <- 0
+    cantEmpanada <- 0
 
-  <br>
+    Repetir
 
-</div>
+        Escribir "CAFETERIA UNIVERSITARIA"
+        Escribir "1. Registrar venta"
+        Escribir "2. Mostrar estadisticas"
+        Escribir "3. Mostrar tabla de productos"
+        Escribir "4. Salir"
+        Escribir "Elige opcion:"
+        Leer opcion
 
-## 👥 Integrantes
+        Segun opcion Hacer
 
-* Toalombo Punina Jeremy Patricio
-* Dávila Hernández Gabriel Marcelo
-* Masabanda Chasiluisa Jeremy Isaac
+            1:
+                Escribir "Productos:"
+                Escribir "1. Cafe $1.00"
+                Escribir "2. Sandwich $2.50"
+                Escribir "3. Jugo $1.50"
+                Escribir "4. Empanada $1.25"
 
-## 🎯 Objetivo
+                Escribir "Producto (1-4):"
+                Leer prod
 
-Comprender y aplicar los conceptos teóricos y prácticos de las estructuras de control repetitivas (While, Do While y For) mediante la resolución de algoritmos, con el fin de automatizar procesos iterativos, optimizar la lógica de programación y diferenciar cuándo es más eficiente utilizar cada tipo de bucle según la naturaleza del problema.
+                Escribir "Cantidad:"
+                Leer cant
 
-## 📝 Descripción de los Ejercicios
+                Si cant <= 0 Entonces
+                    Escribir "Error: Cantidad debe ser > 0"
+                SiNo
 
-* **Ejercicio 1:** El programa permite registrar las calificaciones de un grupo de estudiantes, validar que los datos ingresados sean correctos y calcular información general como la suma, el promedio, la nota más alta, la nota más baja y la cantidad de estudiantes aprobados y reprobados.
-* **Ejercicio 2:** El programa permite ingresar una tabla inicial y una tabla final para generar las tablas de multiplicar correspondientes. También permite establecer hasta qué multiplicador se mostrarán los resultados y valida que la tabla inicial no sea mayor que la tabla final.
-* **Ejercicio 3:** El programa permite ingresar un número N y generar la serie de números pares desde 2 hasta N. Además, calcula la cantidad de números pares, su suma y el promedio de los valores
+                    precio <- 0
 
+                    Segun prod Hacer
+                        1:
+                            precio <- 1.00
+                            cantCafe <- cantCafe + cant
 
-## 🏗️ Estructuras Utilizadas
+                        2:
+                            precio <- 2.50
+                            cantSandwich <- cantSandwich + cant
 
-* **Bucle `while`:**
-  * Validación de datos de entrada (número de estudiantes > 0 y notas en rango 0-10).
+                        3:
+                            precio <- 1.50
+                            cantJugo <- cantJugo + cant
 
-* **Bucle `for`:**
-  * Recorrido del arreglo para procesar las `n` calificaciones, acumular la suma y calcular estadísticas.
+                        4:
+                            precio <- 1.25
+                            cantEmpanada <- cantEmpanada + cant
 
-* **Condicionales `if-else`:**
-  * Clasificación de aprobados/reprobados y actualización de nota máxima y mínima.
-*   **Arreglos:**
-    *   `double[] notas` para almacenar las calificaciones de todos los estudiantes.
+                        De Otro Modo:
+                            Escribir "Error: Producto no valido"
+                            precio <- -1
+                    FinSegun
 
+                    Si precio <> -1 Entonces
+                        subtotal <- precio * cant
+                        totalRecaudado <- totalRecaudado + subtotal
+                        cantidadTotal <- cantidadTotal + cant
+                        numVentas <- numVentas + 1
 
+                        Escribir "Venta registrada: $", subtotal
+                    FinSi
+
+                FinSi
+
+            2:
+                Escribir "--- ESTADISTICAS ---"
+                Escribir "Numero de ventas: ", numVentas
+                Escribir "Cantidad total de productos: ", cantidadTotal
+                Escribir "Total recaudado: $", totalRecaudado
+
+                Si numVentas > 0 Entonces
+                    promedio <- totalRecaudado / numVentas
+                SiNo
+                    promedio <- 0
+                FinSi
+
+                Escribir "Promedio por venta: $", promedio
+
+                Si numVentas = 0 Entonces
+                    Escribir "Producto mas vendido: Ninguno aun"
+                SiNo
+
+                    masVendido <- "Cafe"
+                    max <- cantCafe
+
+                    Si cantSandwich > max Entonces
+                        max <- cantSandwich
+                        masVendido <- "Sandwich"
+                    FinSi
+
+                    Si cantJugo > max Entonces
+                        max <- cantJugo
+                        masVendido <- "Jugo"
+                    FinSi
+
+                    Si cantEmpanada > max Entonces
+                        max <- cantEmpanada
+                        masVendido <- "Empanada"
+                    FinSi
+
+                    Escribir "Producto con mayor cantidad vendida: ", masVendido
+                    Escribir "Unidades: ", max
+
+                FinSi
+
+            3:
+                Escribir "--- TABLA DE PRODUCTOS ---"
+                Escribir "1. Cafe      $1.00"
+                Escribir "2. Sandwich  $2.50"
+                Escribir "3. Jugo      $1.50"
+                Escribir "4. Empanada  $1.25"
+
+            4:
+                Escribir "Saliendo..."
+
+            De Otro Modo:
+                Escribir "Error: Opcion no valida"
+
+        FinSegun
+
+    Hasta Que opcion = 4
+
+FinProceso
+
+````
+
+## Prueba de escritorio 
+
+|    Paso | Opción | Producto | Cant. | Precio | Subtotal | Ventas | Cant. total | Recaudado | Café | Sandwich | Jugo | Empanada |
+| ------: | -----: | -------- | ----: | -----: | -------: | -----: | ----------: | --------: | ---: | -------: | ---: | -------: |
+| Inicial |      — | —        |     — |      — |        — |      0 |           0 |     $0.00 |    0 |        0 |    0 |        0 |
+|       1 |      1 | Café     |     3 |  $1.00 |    $3.00 |      1 |           3 |     $3.00 |    3 |        0 |    0 |        0 |
+|       2 |      1 | Sandwich |     2 |  $2.50 |    $5.00 |      2 |           5 |     $8.00 |    3 |        2 |    0 |        0 |
+|       3 |      1 | Jugo     |     4 |  $1.50 |    $6.00 |      3 |           9 |    $14.00 |    3 |        2 |    4 |        0 |
+|       4 |      2 | —        |     — |      — |        — |      3 |           9 |    $14.00 |    3 |        2 |    4 |        0 |
+|       5 |      4 | —        |     — |      — |        — |      3 |           9 |    $14.00 |    3 |        2 |    4 |        0 |
