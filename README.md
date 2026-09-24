@@ -1,3 +1,30 @@
+## Enunciado
+Ejercicio 7. Control de ventas de cafetería
+
+Construya un sistema con un menú para una cafetería universitaria que permita registrar ventas, mostrar estadísticas, mostrar la tabla de productos y salir del programa.
+
+Los productos disponibles son:
+
+Café — $1.00
+Sándwich — $2.50
+Jugo — $1.50
+Empanada — $1.25
+
+Al registrar una venta se deberá solicitar el producto y la cantidad.
+
+El reporte deberá indicar:
+
+Número de ventas.
+Cantidad total de productos.
+Total recaudado.
+Promedio por venta.
+Producto con mayor cantidad vendida.
+
+Validar todos los datos ingresados.
+
+Estructuras esperadas: do-while, switch, contadores, acumuladores y condicionales.
+## Analisis
+
 ## Pseudocodigo 
 ````
 Proceso Cafeteria
