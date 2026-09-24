@@ -38,38 +38,42 @@ Casos límite: N = 1, N = 2 y valores negativos.
 
 ## Pseudocodigo 
 ```
-import java.util.Scanner;
+Proceso Ejercicio3
 
-public class Ejercicio3 {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Ingrese N: ");
-        int N = sc.nextInt();
-        // Validación - caso límite N = 1, 0, 2 y negativos
-        if (N <= 1) {
-            System.out.println("No hay numeros pares entre 2 y " + N);
-            sc.close();
-            return;
-        }
-        int contador = 0; // cuenta cuantos pares hay
-        int acumulador = 0; // suma los pares
-        System.out.println("\nSerie:");
-        for (int i = 2; i <= N; i++) {
-            if (i % 2 == 0) {
-                System.out.print(i + " ");
-                contador++;
-                acumulador = acumulador + i;
-            }
-        }
-        System.out.println("\n\nCantidad de pares: " + contador);
-        System.out.println("Suma: " + acumulador);
-        if (contador > 0) {
-            double promedio = (double) acumulador / contador;
-            System.out.println("Promedio: " + promedio);
-        }
-        sc.close();
-    }
-}
+    Definir N, contador, acumulador, i Como Entero
+    Definir promedio Como Real
+
+    Escribir "Ingrese N: "
+    Leer N
+
+    // Validación
+    Si N <= 1 Entonces
+        Escribir "No hay numeros pares entre 2 y ", N
+    SiNo
+        contador <- 0
+        acumulador <- 0
+
+        Escribir "Serie:"
+
+        Para i <- 2 Hasta N Con Paso 1 Hacer
+            Si i MOD 2 = 0 Entonces
+                Escribir Sin Saltar i, " "
+                contador <- contador + 1
+                acumulador <- acumulador + i
+            FinSi
+        FinPara
+
+        Escribir ""
+        Escribir "Cantidad de pares: ", contador
+        Escribir "Suma: ", acumulador
+
+        Si contador > 0 Entonces
+            promedio <- acumulador / contador
+            Escribir "Promedio: ", promedio
+        FinSi
+    FinSi
+
+FinProceso
 ```
 
 ## Prueba de escritorio 
