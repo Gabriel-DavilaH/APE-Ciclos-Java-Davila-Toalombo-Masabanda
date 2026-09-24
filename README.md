@@ -1,3 +1,19 @@
+## Enunciado
+
+Ejercicio 3. Serie y suma de números pares
+
+Solicite un número entero positivo N. El programa deberá mostrar todos los números pares desde 2 hasta N.
+
+Además, debe mostrar la cantidad de números pares, la suma y el promedio.
+
+Debe utilizar:
+
+Contador.
+Acumulador.
+Validación.
+Estructura for.
+
+Casos límite: N = 1, N = 2 y valores negativos.
 ## Analisis
 Entrada<br>
 -Ingresar el número N.<br>
