@@ -1,3 +1,64 @@
+## Enunciado
+Ejercicio 5. Estacionamiento universitario
+
+Desarrollar un programa para registrar los vehículos que utilizan un estacionamiento.
+
+Por cada vehículo se debe solicitar:
+
+Tipo de vehículo:
+Motocicleta
+Automóvil
+Camioneta
+Horas estacionado.
+
+Las tarifas por hora son:
+
+Motocicleta: $0.50
+Automóvil: $1.00
+Camioneta: $1.50
+
+El programa debe permitir registrar varios vehículos hasta que el usuario decida terminar.
+
+Al finalizar, debe mostrar un reporte con:
+
+Motocicletas.
+Automóviles.
+Camionetas.
+Total de vehículos.
+Total recaudado.
+Promedio pagado.
+
+Se debe validar que las horas sean mayores que cero.
+
+Estructuras esperadas: do-while, switch, contadores y acumuladores.
+
+## Analisis
+**<br>Entrada<br>**
+Ingresar el tipo de vehículo.<br>
+Ingresar las horas estacionado.<br>
+Ingresar la opción para decidir si se desea registrar otro vehículo.<br>
+**<br>Proceso<br>**
+Iniciar los contadores de motocicletas, automóviles y camionetas en 0.<br>
+Iniciar el acumulador del total recaudado en 0.<br>
+Registrar el tipo de vehículo.<br>
+Registrar las horas estacionado.<br>
+Validar que las horas sean mayores que 0.<br>
+Según el tipo de vehículo, seleccionar su tarifa mediante switch.<br>
+Calcular el valor a pagar:<br>
+horas × tarifa.<br>
+Aumentar el contador correspondiente al tipo de vehículo.<br>
+Aumentar el total de vehículos.<br>
+Acumular el valor pagado en el total recaudado.<br>
+Repetir el proceso mientras el usuario desee registrar más vehículos.<br>
+Calcular el promedio pagado:<br>
+total recaudado ÷ total de vehículos.<br>
+**<br>Salida<br>**
+Mostrar la cantidad de motocicletas.<br>
+Mostrar la cantidad de automóviles.<br>
+Mostrar la cantidad de camionetas.<br>
+Mostrar el total de vehículos.<br>
+Mostrar el total recaudado.<br>
+Mostrar el promedio pagado.<br>
 ## Pseudocodigo 
 ````
 Proceso Estacionamiento
