@@ -35,6 +35,15 @@ El programa solicita un número entre 2 y 10 y genera tres patrones utilizando c
 * **Ejercicio 7:** 
 El programa permite registrar ventas de productos de una cafetería universitaria, validando las cantidades ingresadas. Calcula el subtotal de cada venta, el total recaudado, la cantidad total de productos, el promedio por venta y determina cuál fue el producto más vendido.
 
+* **Ejercicio 8:** 
+El programa utiliza un ciclo while para mostrar los números del 1 al 10. Se identifica y corrige el error mediante el incremento de la variable numero, evitando que el ciclo se ejecute indefinidamente.
+
+* **Ejercicio 9:** 
+El programa registra información de varios estudiantes, como edad, semestre y horas de estudio. Valida los datos y calcula promedios, identifica al estudiante con mayor cantidad de horas de estudio, cuenta quienes estudian menos de 2 horas y determina la cantidad de estudiantes por semestre.
+
+* **Ejercicio 10:** 
+El programa permite registrar vehículos según su tipo, rol, horas de permanencia, día de la semana y estado del boleto. Calcula tarifas, descuentos, recargos y multas, además de mostrar estadísticas sobre los vehículos registrados, horas, valores pagados y recaudación total.
+
 
 ## 🏗️ Estructuras Utilizadas
 
