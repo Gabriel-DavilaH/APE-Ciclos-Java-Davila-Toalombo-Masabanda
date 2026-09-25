@@ -1,3 +1,49 @@
+## Enunciado
+
+Ejercicio 9. Estadísticas de una encuesta universitaria
+
+Preguntar inicialmente cuántos estudiantes participarán en la encuesta. Para cada estudiante, solicitar la edad, el semestre y las horas de estudio por día.
+
+Validar que la edad esté entre 16 y 80 años, el semestre entre 1 y 10, y las horas de estudio entre 0 y 24 horas.
+
+Al finalizar, determinar el promedio de edad, el promedio de horas de estudio, el estudiante con mayor cantidad de horas de estudio, la cantidad de estudiantes que estudian menos de 2 horas y la cantidad de estudiantes que pertenecen a cada semestre.
+
+Para obtener la cantidad de estudiantes por semestre se deberán utilizar ciclos anidados o una estrategia equivalente, explicada por el estudiante.
+
+## Análisis
+**Entrada**
+Cantidad de estudiantes que participarán.
+Edad de cada estudiante.
+Semestre de cada estudiante.
+Horas de estudio por día de cada estudiante.
+
+**Validaciones:**
+
+Edad: de 16 a 80.
+Semestre: de 1 a 10.
+Horas de estudio: de 0 a 24.
+Proceso
+Solicitar la cantidad de estudiantes.
+Repetir el proceso para cada estudiante.
+Solicitar y validar la edad.
+Solicitar y validar el semestre.
+Solicitar y validar las horas de estudio.
+Acumular las edades para calcular el promedio.
+Acumular las horas de estudio para calcular el promedio.
+Comparar las horas de estudio para determinar cuál estudiante tiene la mayor cantidad.
+Contar los estudiantes que estudian menos de 2 horas.
+Contabilizar la cantidad de estudiantes de cada semestre mediante ciclos anidados o una estrategia equivalente.
+Calcular el promedio de edad.
+Calcular el promedio de horas de estudio.
+Salida
+
+**Mostrar:**
+
+Edad promedio de los estudiantes.
+Promedio de horas de estudio por día.
+Estudiante con mayor cantidad de horas de estudio.
+Cantidad de estudiantes que estudian menos de 2 horas.
+Cantidad de estudiantes de cada semestre, del 1 al 10.
 ## Pseudocodigo 
 ````
 Proceso EncuestaUniversitaria
