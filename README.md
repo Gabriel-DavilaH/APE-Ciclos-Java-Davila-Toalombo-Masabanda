@@ -86,3 +86,12 @@ public class ErrorVoluntario {
     }
 }
 ````
+
+## Análisis Del Ejemplo 
+ERROR VOLUNTARIO ENCONTRADO: El for termina en ; por lo tanto su cuerpo esta vacio.
+CAUSA: El ; cierra el ciclo. El bloque {} de abajo no pertenece al for.
+SOLUCIÓN: Quitar el ; despues de for(int i=1; i<=5; i++)
+RESULTADO: Ahora imprime i=1,2,3,4,5 correctamente.
+
+## Diagrama
+<img width="1600" height="900" alt="WhatsApp Image 2026-09-25 at 9 23 44 AM" src="https://github.com/user-attachments/assets/1e5f6ebb-f37d-41e6-bc45-a3edbeaebbf1" />
