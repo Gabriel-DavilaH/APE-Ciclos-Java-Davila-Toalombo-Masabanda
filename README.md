@@ -310,3 +310,6 @@ FinProceso
 | 1        | Moto  | Estudiante |     2 | Lunes (1)   | No             |
 | 2        | Carro | Docente    |     3 | Sábado (6)  | No             |
 | 3        | Bici  | Visitante  |     4 | Domingo (7) | Sí             |
+
+## Diagrama 
+<img width="1600" height="900" alt="WhatsApp Image 2026-09-25 at 9 42 51 AM" src="https://github.com/user-attachments/assets/a4c56caf-b32b-40e0-9f43-127ef108b7cd" />
