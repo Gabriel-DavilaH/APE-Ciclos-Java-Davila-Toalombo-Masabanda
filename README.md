@@ -1,52 +1,235 @@
-<div align="center">
+## Pseudocodigo 
+````
+Proceso ParqueaderoUni
 
-  <img src="https://capsule-render.vercel.app/api?type=wave&color=0:0D1B3D,50:4B1FA6,100:00C9FF&height=220&section=header&text=Tarea&fontSize=52&fontColor=FFFFFF&animation=fadeIn&fontAlignY=38" alt="Encabezado animado del repositorio Prueba-Practica"/>
+    Definir MAX, totalVehiculos Como Entero
+    Definir opcion, tipo, rol, h, dia Como Entero
+    Definir i, j, d, contDia, idx Como Entero
+    Definir tarifaHora, subtotal Como Real
+    Definir recaudacion Como Real
+    Definir resp Como Caracter
+    Definir perdido Como Logico
 
-  <br>
+    MAX <- 100
+    totalVehiculos <- 0
 
-  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=22&duration=3500&pause=900&color=00C9FF&center=true&vCenter=true&width=800&height=90&lines=Si+lo+puedes+imaginar%2C+lo+puedes+programar.;Primero+lo+imaginamos.+Luego+lo+programamos.;Y+si+falla%2C+lo+depuramos+juntos.;Que+la+fuerza+del+debug+nos+acompa%C3%B1e." alt="Frases animadas con efecto de escritura"/>
+    Dimension tipos[MAX]
+    Dimension roles[MAX]
+    Dimension horas[MAX]
+    Dimension dias[MAX]
+    Dimension boletoPerdido[MAX]
+    Dimension valores[MAX]
 
-  <br>
+    Repetir
 
-</div>
+        Escribir "PARQUEADERO UNIVERSITARIO"
+        Escribir "1. Registrar vehiculo"
+        Escribir "2. Mostrar vehiculos registrados"
+        Escribir "3. Mostrar estadisticas"
+        Escribir "4. Mostrar recaudacion"
+        Escribir "5. Salir"
+        Escribir "Elige opcion:"
+        Leer opcion
 
-## 👥 Integrantes
+        Segun opcion Hacer
 
-* Toalombo Punina Jeremy Patricio
-* Dávila Hernández Gabriel Marcelo
-* Masabanda Chasiluisa Jeremy Isaac
+            1:
+                Si totalVehiculos >= MAX Entonces
+                    Escribir "Parqueadero lleno"
+                SiNo
 
-## 🎯 Objetivo
+                    Repetir
+                        Escribir "Tipo: 1.Moto 2.Carro 3.Bici"
+                        Leer tipo
+                    Hasta Que tipo >= 1 Y tipo <= 3
 
-Comprender y aplicar los conceptos teóricos y prácticos de las estructuras de control repetitivas (While, Do While y For) mediante la resolución de algoritmos, con el fin de automatizar procesos iterativos, optimizar la lógica de programación y diferenciar cuándo es más eficiente utilizar cada tipo de bucle según la naturaleza del problema.
+                    Repetir
+                        Escribir "Rol: 1.Estudiante 2.Docente 3.Visitante"
+                        Leer rol
+                    Hasta Que rol >= 1 Y rol <= 3
 
-## 📝 Descripción de los Ejercicios
+                    Repetir
+                        Escribir "Numero de horas (1-24):"
+                        Leer h
+                    Hasta Que h >= 1 Y h <= 24
 
-* **Ejercicio 1:** El programa permite registrar las calificaciones de un grupo de estudiantes, validar que los datos ingresados sean correctos y calcular información general como la suma, el promedio, la nota más alta, la nota más baja y la cantidad de estudiantes aprobados y reprobados.
-* **Ejercicio 2:** El programa permite ingresar una tabla inicial y una tabla final para generar las tablas de multiplicar correspondientes. También permite establecer hasta qué multiplicador se mostrarán los resultados y valida que la tabla inicial no sea mayor que la tabla final.
-* **Ejercicio 3:** El programa permite ingresar un número N y generar la serie de números pares desde 2 hasta N. Además, calcula la cantidad de números pares, su suma y el promedio de los valores
-* **Ejercicio 4:** 
-El programa simula el funcionamiento de un cajero académico con un saldo inicial de $100. Permite consultar el saldo, realizar depósitos y retiros, validar que los valores ingresados sean correctos y verificar que existan fondos suficientes. Además, utiliza contadores y acumuladores para registrar la cantidad y el total de depósitos y retiros, mostrando los movimientos realizados y un resumen final con el saldo disponible.
-* **Ejercicio 5:** 
-El programa simula un estacionamiento universitario donde se registra el tipo de vehículo y las horas estacionadas. Calcula el valor a pagar según la tarifa correspondiente y obtiene estadísticas como la cantidad de motocicletas, automóviles y camionetas, el total recaudado y el promedio pagado.
-* **Ejercicio 6:** 
-El programa solicita un número entre 2 y 10 y genera tres patrones utilizando ciclos anidados: un triángulo creciente de asteriscos, un triángulo decreciente y un patrón numérico creciente.
+                    Repetir
+                        Escribir "Dia semana 1=Lun...7=Dom:"
+                        Leer dia
+                    Hasta Que dia >= 1 Y dia <= 7
 
-* **Ejercicio 7:** 
-El programa permite registrar ventas de productos de una cafetería universitaria, validando las cantidades ingresadas. Calcula el subtotal de cada venta, el total recaudado, la cantidad total de productos, el promedio por venta y determina cuál fue el producto más vendido.
+                    perdido <- Falso
 
+                    Repetir
+                        Escribir "Boleto perdido? (si/no):"
+                        Leer resp
 
-## 🏗️ Estructuras Utilizadas
+                        Si resp = "si" Entonces
+                            perdido <- Verdadero
+                        FinSi
 
-* **Bucle `while`:**
-  * Validación de datos de entrada (número de estudiantes > 0 y notas en rango 0-10).
+                    Hasta Que resp = "si" O resp = "no"
 
-* **Bucle `for`:**
-  * Recorrido del arreglo para procesar las `n` calificaciones, acumular la suma y calcular estadísticas.
+                    Segun tipo Hacer
+                        1:
+                            tarifaHora <- 0.50
+                        2:
+                            tarifaHora <- 1.00
+                        3:
+                            tarifaHora <- 0.25
+                    FinSegun
 
-* **Condicionales `if-else`:**
-  * Clasificación de aprobados/reprobados y actualización de nota máxima y mínima.
-*   **Arreglos:**
-    *   `double[] notas` para almacenar las calificaciones de todos los estudiantes.
+                    subtotal <- tarifaHora * h
 
+                    Si rol = 1 Entonces
+                        subtotal <- subtotal * 0.80
+                    SiNo
+                        Si rol = 2 Entonces
+                            subtotal <- subtotal * 0.70
+                        FinSi
+                    FinSi
 
+                    Si dia = 6 O dia = 7 Entonces
+                        subtotal <- subtotal * 1.20
+                    FinSi
+
+                    Si perdido Entonces
+                        subtotal <- subtotal + 5.0
+                    FinSi
+
+                    tipos[totalVehiculos] <- tipo
+                    roles[totalVehiculos] <- rol
+                    horas[totalVehiculos] <- h
+                    dias[totalVehiculos] <- dia
+                    boletoPerdido[totalVehiculos] <- perdido
+                    valores[totalVehiculos] <- subtotal
+
+                    totalVehiculos <- totalVehiculos + 1
+
+                    Escribir "Valor a pagar: $", subtotal
+
+                FinSi
+
+            2:
+                Si totalVehiculos = 0 Entonces
+                    Escribir "No hay vehiculos"
+                SiNo
+
+                    Para i <- 0 Hasta totalVehiculos - 1 Hacer
+                        Escribir i + 1, ". Tipo: ", tipos[i],
+                                " | Rol: ", roles[i],
+                                " | ", horas[i], "h",
+                                " | Dia: ", dias[i],
+                                " | $", valores[i]
+                    FinPara
+
+                FinSi
+
+            3:
+                Si totalVehiculos = 0 Entonces
+                    Escribir "Sin datos"
+                SiNo
+
+                    cMoto <- 0
+                    cCarro <- 0
+                    cBici <- 0
+                    cEst <- 0
+                    cDoc <- 0
+                    cVis <- 0
+                    totalHoras <- 0
+                    totalRec <- 0
+
+                    mayor <- valores[0]
+                    menor <- valores[0]
+
+                    Para i <- 0 Hasta totalVehiculos - 1 Hacer
+
+                        Si tipos[i] = 1 Entonces
+                            cMoto <- cMoto + 1
+                        SiNo
+                            Si tipos[i] = 2 Entonces
+                                cCarro <- cCarro + 1
+                            SiNo
+                                cBici <- cBici + 1
+                            FinSi
+                        FinSi
+
+                        Si roles[i] = 1 Entonces
+                            cEst <- cEst + 1
+                        SiNo
+                            Si roles[i] = 2 Entonces
+                                cDoc <- cDoc + 1
+                            SiNo
+                                cVis <- cVis + 1
+                            FinSi
+                        FinSi
+
+                        totalHoras <- totalHoras + horas[i]
+                        totalRec <- totalRec + valores[i]
+
+                        Si valores[i] > mayor Entonces
+                            mayor <- valores[i]
+                        FinSi
+
+                        Si valores[i] < menor Entonces
+                            menor <- valores[i]
+                        FinSi
+
+                    FinPara
+
+                    Escribir "Vehiculos: ", totalVehiculos
+                    Escribir "Por tipo: Moto=", cMoto,
+                            " Carro=", cCarro,
+                            " Bici=", cBici
+                    Escribir "Por rol: Est=", cEst,
+                            " Doc=", cDoc,
+                            " Vis=", cVis
+                    Escribir "Total horas: ", totalHoras
+                    Escribir "Promedio: ", totalHoras / totalVehiculos
+                    Escribir "Mayor: $", mayor
+                    Escribir "Menor: $", menor
+
+                    Para d <- 1 Hasta 7 Hacer
+
+                        contDia <- 0
+
+                        Para j <- 0 Hasta totalVehiculos - 1 Hacer
+                            Si dias[j] = d Entonces
+                                contDia <- contDia + 1
+                            FinSi
+                        FinPara
+
+                        Si contDia > 0 Entonces
+                            Escribir "Dia ", d, ": ", contDia
+                        FinSi
+
+                    FinPara
+
+                FinSi
+
+            4:
+                recaudacion <- 0
+                idx <- 0
+
+                Mientras idx < totalVehiculos Hacer
+                    recaudacion <- recaudacion + valores[idx]
+                    idx <- idx + 1
+                FinMientras
+
+                Escribir "Total recaudado: $", recaudacion
+
+            5:
+                Escribir "Saliendo..."
+
+        FinSegun
+
+    Hasta Que opcion = 5
+
+FinProceso
+````
+## Prueba de escritorio 
+| Vehículo | Tipo  | Rol        | Horas | Día         | Boleto perdido |
+| -------- | ----- | ---------- | ----: | ----------- | -------------- |
+| 1        | Moto  | Estudiante |     2 | Lunes (1)   | No             |
+| 2        | Carro | Docente    |     3 | Sábado (6)  | No             |
+| 3        | Bici  | Visitante  |     4 | Domingo (7) | Sí             |
