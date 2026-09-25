@@ -11,39 +11,39 @@ Al finalizar, determinar el promedio de edad, el promedio de horas de estudio, e
 Para obtener la cantidad de estudiantes por semestre se deberán utilizar ciclos anidados o una estrategia equivalente, explicada por el estudiante.
 
 ## Análisis
-**Entrada**
-Cantidad de estudiantes que participarán.
-Edad de cada estudiante.
-Semestre de cada estudiante.
-Horas de estudio por día de cada estudiante.
+**Entrada<br>**
+Cantidad de estudiantes que participarán.<br>
+Edad de cada estudiante.<br>
+Semestre de cada estudiante.<br>
+Horas de estudio por día de cada estudiante.<br>
 
-**Validaciones:**
+Validaciones:<br>
 
-Edad: de 16 a 80.
-Semestre: de 1 a 10.
-Horas de estudio: de 0 a 24.
-Proceso
-Solicitar la cantidad de estudiantes.
-Repetir el proceso para cada estudiante.
-Solicitar y validar la edad.
-Solicitar y validar el semestre.
-Solicitar y validar las horas de estudio.
-Acumular las edades para calcular el promedio.
-Acumular las horas de estudio para calcular el promedio.
-Comparar las horas de estudio para determinar cuál estudiante tiene la mayor cantidad.
-Contar los estudiantes que estudian menos de 2 horas.
-Contabilizar la cantidad de estudiantes de cada semestre mediante ciclos anidados o una estrategia equivalente.
-Calcular el promedio de edad.
-Calcular el promedio de horas de estudio.
-Salida
+Edad: de 16 a 80.<br>
+Semestre: de 1 a 10.<br>
+Horas de estudio: de 0 a 24.<br>
+**Proceso<br>**
+Solicitar la cantidad de estudiantes.<br>
+Repetir el proceso para cada estudiante.<br>
+Solicitar y validar la edad.<br>
+Solicitar y validar el semestre.<br>
+Solicitar y validar las horas de estudio.<br>
+Acumular las edades para calcular el promedio.<br>
+Acumular las horas de estudio para calcular el promedio.<br>
+Comparar las horas de estudio para determinar cuál estudiante tiene la mayor cantidad.<br>
+Contar los estudiantes que estudian menos de 2 horas.<br>
+Contabilizar la cantidad de estudiantes de cada semestre mediante ciclos anidados o una estrategia equivalente.<br>
+Calcular el promedio de edad.<br>
+Calcular el promedio de horas de estudio.<br>
+**Salida<br>**
 
-**Mostrar:**
+Mostrar:<br>
 
-Edad promedio de los estudiantes.
-Promedio de horas de estudio por día.
-Estudiante con mayor cantidad de horas de estudio.
-Cantidad de estudiantes que estudian menos de 2 horas.
-Cantidad de estudiantes de cada semestre, del 1 al 10.
+Edad promedio de los estudiantes.<br>
+Promedio de horas de estudio por día.<br>
+Estudiante con mayor cantidad de horas de estudio.<br>
+Cantidad de estudiantes que estudian menos de 2 horas.<br>
+Cantidad de estudiantes de cada semestre, del 1 al 10.<br>
 ## Pseudocodigo 
 ````
 Proceso EncuestaUniversitaria
