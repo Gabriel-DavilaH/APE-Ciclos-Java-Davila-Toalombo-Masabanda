@@ -36,6 +36,45 @@ menor valor pagado.
 Debe integrar obligatoriamente:
 
 for + while + do-while + switch + ciclos anidados + contadores + acumuladores + validaciones + casos límite.
+## Análisis
+**Entrada<br>**
+Tipo de vehículo.<br>
+Rol del usuario.<br>
+Número de horas.<br>
+Día de la semana.<br>
+Boleto perdido: sí/no.<br>
+Opción del menú.<br>
+
+**Proceso<br>**
+Registrar los datos de cada vehículo.<br>
+Validar los datos ingresados.<br>
+Determinar la tarifa según el tipo de vehículo.<br>
+Determinar la tarifa según el rol.<br>
+Determinar la tarifa según el día de la semana.<br>
+Calcular el valor a pagar.<br>
+Aplicar el recargo correspondiente cuando se pierde el boleto.<br>
+Contabilizar los vehículos registrados.<br>
+Contabilizar los vehículos por tipo.<br>
+Contabilizar los vehículos por rol.<br>
+Acumular el total de horas.<br>
+Acumular el total recaudado.<br>
+Calcular el promedio de permanencia.<br>
+Determinar el mayor valor pagado.<br>
+Determinar el menor valor pagado.<br>
+Mostrar las estadísticas y la recaudación.<br>
+
+**Salida<br>**
+Menú principal.<br>
+Vehículos registrados.<br>
+Cantidad de vehículos por tipo.<br>
+Cantidad de vehículos por rol.<br>
+Total de horas.<br>
+Promedio de permanencia.<br>
+Total recaudado.<br>
+Mayor valor pagado.<br>
+Menor valor pagado.<br>
+Mensajes de validación y resultados del proceso.<br>
+
 ## Pseudocodigo 
 ````
 Proceso ParqueaderoUni
