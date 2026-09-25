@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="https://capsule-render.vercel.app/api?type=wave&color=0:0D1B3D,50:4B1FA6,100:00C9FF&height=220&section=header&text=Estructuras&fontSize=52&fontColor=FFFFFF&animation=fadeIn&fontAlignY=38" alt="Encabezado animado del repositorio Estructuras de control"/>
+  <img src="https://capsule-render.vercel.app/api?type=wave&color=0:0D1B3D,50:4B1FA6,100:00C9FF&height=220&section=header&text=Estructuras de control&fontSize=52&fontColor=FFFFFF&animation=fadeIn&fontAlignY=38" alt="Encabezado animado del repositorio Estructuras de control"/>
 
   <br>
 
