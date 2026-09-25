@@ -1,52 +1,117 @@
-<div align="center">
+## Pseudocodigo 
+````
+Proceso EncuestaUniversitaria
 
-  <img src="https://capsule-render.vercel.app/api?type=wave&color=0:0D1B3D,50:4B1FA6,100:00C9FF&height=220&section=header&text=Tarea&fontSize=52&fontColor=FFFFFF&animation=fadeIn&fontAlignY=38" alt="Encabezado animado del repositorio Prueba-Practica"/>
+    Definir numEstudiantes Como Entero
+    Definir sumaEdades, sumaHoras Como Real
+    Definir maxHoras, estudianteMaxHoras, menosDe2Horas Como Entero
+    Definir promedioEdad, promedioHoras Como Real
+    Definir edad, semestre, hEstudio Como Entero
+    Definir i, s, j, contador Como Entero
 
-  <br>
+    Repetir
+        Escribir "¿Cuantos estudiantes participaran?"
+        Leer numEstudiantes
 
-  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=22&duration=3500&pause=900&color=00C9FF&center=true&vCenter=true&width=800&height=90&lines=Si+lo+puedes+imaginar%2C+lo+puedes+programar.;Primero+lo+imaginamos.+Luego+lo+programamos.;Y+si+falla%2C+lo+depuramos+juntos.;Que+la+fuerza+del+debug+nos+acompa%C3%B1e." alt="Frases animadas con efecto de escritura"/>
+        Si numEstudiantes <= 0 Entonces
+            Escribir "Error: Debe ser mayor a 0"
+        FinSi
+    Hasta Que numEstudiantes > 0
 
-  <br>
+    sumaEdades <- 0
+    sumaHoras <- 0
+    maxHoras <- -1
+    estudianteMaxHoras <- 0
+    menosDe2Horas <- 0
 
-</div>
+    Dimension edades[numEstudiantes]
+    Dimension semestres[numEstudiantes]
+    Dimension horas[numEstudiantes]
 
-## 👥 Integrantes
+    Para i <- 0 Hasta numEstudiantes - 1 Hacer
 
-* Toalombo Punina Jeremy Patricio
-* Dávila Hernández Gabriel Marcelo
-* Masabanda Chasiluisa Jeremy Isaac
+        Escribir "--- Estudiante ", i + 1, " ---"
 
-## 🎯 Objetivo
+        Repetir
+            Escribir "Edad (16-80):"
+            Leer edad
 
-Comprender y aplicar los conceptos teóricos y prácticos de las estructuras de control repetitivas (While, Do While y For) mediante la resolución de algoritmos, con el fin de automatizar procesos iterativos, optimizar la lógica de programación y diferenciar cuándo es más eficiente utilizar cada tipo de bucle según la naturaleza del problema.
+            Si edad < 16 O edad > 80 Entonces
+                Escribir "Error: Edad fuera de rango"
+            FinSi
+        Hasta Que edad >= 16 Y edad <= 80
 
-## 📝 Descripción de los Ejercicios
+        Repetir
+            Escribir "Semestre (1-10):"
+            Leer semestre
 
-* **Ejercicio 1:** El programa permite registrar las calificaciones de un grupo de estudiantes, validar que los datos ingresados sean correctos y calcular información general como la suma, el promedio, la nota más alta, la nota más baja y la cantidad de estudiantes aprobados y reprobados.
-* **Ejercicio 2:** El programa permite ingresar una tabla inicial y una tabla final para generar las tablas de multiplicar correspondientes. También permite establecer hasta qué multiplicador se mostrarán los resultados y valida que la tabla inicial no sea mayor que la tabla final.
-* **Ejercicio 3:** El programa permite ingresar un número N y generar la serie de números pares desde 2 hasta N. Además, calcula la cantidad de números pares, su suma y el promedio de los valores
-* **Ejercicio 4:** 
-El programa simula el funcionamiento de un cajero académico con un saldo inicial de $100. Permite consultar el saldo, realizar depósitos y retiros, validar que los valores ingresados sean correctos y verificar que existan fondos suficientes. Además, utiliza contadores y acumuladores para registrar la cantidad y el total de depósitos y retiros, mostrando los movimientos realizados y un resumen final con el saldo disponible.
-* **Ejercicio 5:** 
-El programa simula un estacionamiento universitario donde se registra el tipo de vehículo y las horas estacionadas. Calcula el valor a pagar según la tarifa correspondiente y obtiene estadísticas como la cantidad de motocicletas, automóviles y camionetas, el total recaudado y el promedio pagado.
-* **Ejercicio 6:** 
-El programa solicita un número entre 2 y 10 y genera tres patrones utilizando ciclos anidados: un triángulo creciente de asteriscos, un triángulo decreciente y un patrón numérico creciente.
+            Si semestre < 1 O semestre > 10 Entonces
+                Escribir "Error: Semestre fuera de rango"
+            FinSi
+        Hasta Que semestre >= 1 Y semestre <= 10
 
-* **Ejercicio 7:** 
-El programa permite registrar ventas de productos de una cafetería universitaria, validando las cantidades ingresadas. Calcula el subtotal de cada venta, el total recaudado, la cantidad total de productos, el promedio por venta y determina cuál fue el producto más vendido.
+        Repetir
+            Escribir "Horas de estudio por dia (0-24):"
+            Leer hEstudio
 
+            Si hEstudio < 0 O hEstudio > 24 Entonces
+                Escribir "Error: Horas fuera de rango"
+            FinSi
+        Hasta Que hEstudio >= 0 Y hEstudio <= 24
 
-## 🏗️ Estructuras Utilizadas
+        edades[i] <- edad
+        semestres[i] <- semestre
+        horas[i] <- hEstudio
 
-* **Bucle `while`:**
-  * Validación de datos de entrada (número de estudiantes > 0 y notas en rango 0-10).
+        sumaEdades <- sumaEdades + edad
+        sumaHoras <- sumaHoras + hEstudio
 
-* **Bucle `for`:**
-  * Recorrido del arreglo para procesar las `n` calificaciones, acumular la suma y calcular estadísticas.
+        Si hEstudio < 2 Entonces
+            menosDe2Horas <- menosDe2Horas + 1
+        FinSi
 
-* **Condicionales `if-else`:**
-  * Clasificación de aprobados/reprobados y actualización de nota máxima y mínima.
-*   **Arreglos:**
-    *   `double[] notas` para almacenar las calificaciones de todos los estudiantes.
+        Si hEstudio > maxHoras Entonces
+            maxHoras <- hEstudio
+            estudianteMaxHoras <- i + 1
+        FinSi
 
+    FinPara
 
+    promedioEdad <- sumaEdades / numEstudiantes
+    promedioHoras <- sumaHoras / numEstudiantes
+
+    Escribir "===== RESULTADOS ====="
+    Escribir "Edad promedio: ", promedioEdad
+    Escribir "Horas promedio de estudio: ", promedioHoras
+    Escribir "Estudiante con mayor cantidad de horas: Estudiante #", estudianteMaxHoras, " con ", maxHoras, " horas"
+    Escribir "Estudiantes que estudian menos de 2 horas: ", menosDe2Horas
+
+    Escribir "Cantidad de estudiantes por semestre:"
+
+    Para s <- 1 Hasta 10 Hacer
+
+        contador <- 0
+
+        Para j <- 0 Hasta numEstudiantes - 1 Hacer
+
+            Si semestres[j] = s Entonces
+                contador <- contador + 1
+            FinSi
+
+        FinPara
+
+        Si contador > 0 Entonces
+            Escribir "Semestre ", s, ": ", contador, " estudiante(s)"
+        FinSi
+
+    FinPara
+
+FinProceso
+````
+## Prueba de escritorio 
+| Estudiante | Edad | Semestre | Horas | `sumaEdades` | `sumaHoras` | `< 2 horas` | `maxHoras` | `estudianteMaxHoras` |
+| ---------: | ---: | -------: | ----: | -----------: | ----------: | ----------: | ---------: | -------------------: |
+|    Inicial |    — |        — |     — |            0 |           0 |           0 |         -1 |                    0 |
+|          1 |   20 |        2 |     3 |           20 |           3 |           0 |          3 |                    1 |
+|          2 |   22 |        2 |     1 |           42 |           4 |           1 |          3 |                    1 |
+|          3 |   19 |        4 |     5 |           61 |           9 |           1 |          5 |                    3 |
