@@ -36,3 +36,33 @@ CAUSA: La variable `numero` nunca cambia de valor dentro del while. La condicion
 SOLUCIÓN: Agregar `numero++;` dentro del cuerpo del while para que la variable de control avance y eventualmente la condicion sea falsa.
 
 RESULTADO: El programa ahora imprime los numeros del 1 al 10 y termina correctamente.
+
+## Código Corregido 
+
+````
+public class DetectorErrores {
+    public static void main(String[] args) {
+        int numero = 1;
+        while (numero <= 10) {
+            System.out.println(numero);
+            numero++; // <-- CORRECCION
+        }
+        System.out.println("Fin del programa");
+    }
+}
+````
+## Prueba de escritorio 
+| Iteración | `numero` inicial | Condición `numero <= 10` | Salida | `numero++` | `numero` final |
+| --------: | ---------------: | :----------------------: | -----: | ---------: | -------------: |
+|         1 |                1 |         Verdadero        |      1 |         +1 |              2 |
+|         2 |                2 |         Verdadero        |      2 |         +1 |              3 |
+|         3 |                3 |         Verdadero        |      3 |         +1 |              4 |
+|         4 |                4 |         Verdadero        |      4 |         +1 |              5 |
+|         5 |                5 |         Verdadero        |      5 |         +1 |              6 |
+|         6 |                6 |         Verdadero        |      6 |         +1 |              7 |
+|         7 |                7 |         Verdadero        |      7 |         +1 |              8 |
+|         8 |                8 |         Verdadero        |      8 |         +1 |              9 |
+|         9 |                9 |         Verdadero        |      9 |         +1 |             10 |
+|        10 |               10 |         Verdadero        |     10 |         +1 |             11 |
+|     Final |               11 |           Falso          |      — |          — |             11 |
+
