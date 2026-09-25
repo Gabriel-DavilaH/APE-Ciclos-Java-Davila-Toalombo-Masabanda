@@ -35,8 +35,8 @@ Contar los estudiantes que estudian menos de 2 horas.<br>
 Contabilizar la cantidad de estudiantes de cada semestre mediante ciclos anidados o una estrategia equivalente.<br>
 Calcular el promedio de edad.<br>
 Calcular el promedio de horas de estudio.<br>
-**Salida<br>**
 
+**<br>Salida<br>**
 Mostrar:<br>
 
 Edad promedio de los estudiantes.<br>
