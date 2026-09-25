@@ -1,3 +1,41 @@
+## Enunciado
+Ejercicio 10. Sistema integrador de parqueadero
+
+Construya una aplicación completa utilizando:
+
+
+    PARQUEADERO UNIVERSITARIO
+1. Registrar vehículo
+2. Mostrar vehículos registrados
+3. Mostrar estadísticas
+4. Mostrar recaudación
+5. Salir
+
+
+Por cada vehículo registrar:
+
+tipo de vehículo;
+rol: estudiante, docente o visitante;
+número de horas;
+día de la semana;
+boleto perdido: sí/no.
+
+El programa deberá aplicar diferentes tarifas definidas por el equipo.
+
+El reporte final deberá mostrar:
+
+vehículos registrados;
+cantidad por tipo;
+cantidad por rol;
+total de horas;
+promedio de permanencia;
+total recaudado;
+mayor valor pagado;
+menor valor pagado.
+
+Debe integrar obligatoriamente:
+
+for + while + do-while + switch + ciclos anidados + contadores + acumuladores + validaciones + casos límite.
 ## Pseudocodigo 
 ````
 Proceso ParqueaderoUni
